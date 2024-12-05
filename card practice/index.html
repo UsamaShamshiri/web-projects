@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script >
+        function detailview(imageSrc,title,description){
+            document.getElementById('detailImage').src = imageSrc;
+            document.getElementById('detailtitle').textContent = title;
+            document.getElementById('detaildescription').textContent = description;
+
+            document.getElementById("detail").classList.remove("hidden")
+       
+
+        }
+        function closeProductView(){
+            document.getElementById("detail").classList.add("hidden")
+
+        }
+        </script>
+</head>
+
+<body>
+    <div class="cards flex justify-center gap-10 "> 
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-4  rounded-2xl "
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+            <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolo
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        
+   
+       
+    </div>
+    <div class="cards flex justify-center gap-10 ">
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-4  rounded-2xl "
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+            <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolo
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        <div class="  bg-teal-400    mt-10 w-64   border-2  rounded-2xl cursor-pointer"
+        onclick="detailview('LOGO.png','Product 1','description here')"  >
+         <img src="LOGO.png" alt="pic" class=" border  mt-0 rounded-2xl" >
+            
+            <h1 class="pl-2 text-2xl">Hello</h1>
+            <p class="pl-2 pb-2">Lorem ipsum dolor sit 
+            </p>
+        </div>
+        
+   
+       
+    </div>
+      
+        
+    
+    <div id="detail" class=" fixed inset-0 bg-white flex items-center justify-center  hidden  ">
+        <div class="flex shadow-lg">
+
+            <img src="LOGO.png" alt="" class="w-96 h-96" id="detailImage">
+            <div class=" flex flex-col ml-10 mt-32 w-96">
+                <h1 id="detailtitle" class="text-2xl">Product</h1>
+                <p id="detaildescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque perspiciatis molestias, eum sint veniam nobis aspernatur corrupti neque minus non aliquid ea? Saepe non quia, explicabo eum quas ea harum.</p>
+                <button onclick="closeProductView()" class="mt-6 w-20 px-4 py-2 bg-teal-500 text-white rounded-lg">Close</button>
+
+            </div>
+
+
+
+        </div>
+    </div> 
+
+
+
+    <script src="app.js"></script>
+   
+</body>
+
+</html>
